@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-image: radial-gradient(#eee, #eee);
+  background-color: #ffffff;
+  height: 100vh;
+  width: 95vw;
+  /* overflow: hidden; */
+}
+.img-side{
+  background-image:linear-gradient(#fb5e8d, #a837f4);
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  width: 255px;
+  height: 145px;
+  border-radius: 25px;
+  z-index: -1;
+  transform:matrix(1.5,-0.7,0,2,0,0);
+}
+.btn1 {
+  background-color: #11193e;
+  color: #fff;
+  border: 5px solid #11193e;
+  border-radius: 30px;
+  padding: 5px 5px;
+}
+
+.sk {
+  color: #11193e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.skill {
+  margin-left: 100px;
+  margin-top: 70px;
+  align-items: center;
+  margin-top: 30px;
+}
+.skill,
+h1 {
+  font-weight: bold;
+  margin-top: 70px;
+}
+.btn {
+  background: linear-gradient(#fb605e, #f43795);
+  border-radius: 50px;
+  padding: 10px 8px;
+  color:#fff;
+  padding: 5px 5px;
+}
+ .img {
+  position: relative;
+  height: 400px;
+  width: 255px;
+  margin-top: 30px;
+  left: 165px;
+  /* display: flex; */
+  margin-right: 200px;
+  border-radius: 50% 48% 47% 51% / 30% 30% 35% 32%;
+  /* border: 8px solid #fff; */
+  /* float: right; */
+}
+
+.skill  h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #11193e;
+  margin-top: 45px;
+}
+
+.img-box1{
+  position: absolute;
+  bottom:40px;
+  left: 125px;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 2;
+  width: 20%;
+  text-align: center;
+ }
+.img-box2{
+  position: absolute;
+  top:105px;
+  right: 120px;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 2;
+  width: 15%;
+
+}
+
+.para, h2{
+  text-align: center;
+  padding: 10px 10px;
+  font-style: bold;
+}
+.h3w{
+  color: black;
+  padding: 5px 20px;
+  font-style: bold;
+}
+ i{
+  font-size: 70px;
+  padding: 5px 5px;
+  color: #fff;
+  background-color:  #fb605e;
+  background-size:50% ;
+  border-radius: 50%;
+  margin: 0px 20px;
+  size: 50px;
+}
+.btn2{
+  color: #fb605e;
+  border-radius: 50px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  /* padding: 5px 5px; */
+  font-size: 20px;
+  font-style: bold;
+}
+.text{
+  padding: 20px 40px;
+  /* background-color:red ; */
+  color: #fff;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 100%;
+  font-style: bold;
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "item1 item2 item3"
+  "item4 item5 item6";
+align-items: center;
+   padding: 30px 100px ;
+/* padding-left: 100px; */
+}
+.card-text{
+  padding: 2px 20px;
+}
+.grid-item1{
+  /* background-color: red; */
+  grid-area: item1;
+}
+.grid-item2{
+  /* background-color: blue; */
+  grid-area: item2;
+}
+.grid-item3{
+  /* background-color: purple; */
+  grid-area: item3;
+}
+.grid-item4{
+  /* background-color: yellow; */
+  grid-area: item4;
+}
+.grid-item5{
+  /* background-color: red; */
+  grid-area: item5;
+}
+.grid-item6{
+  /* background-color: red; */
+  grid-area: item6;
+}
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6{
+  padding: 15px 5px;
+}
+/* .box-1{
+  width:90%;
+  height: 100%;
+  background-color:red;
+  border-radius: 15px;
+} */
+
+  .box-1{
+    background-color: #fb605e;
+    width:90%;
+    height: 100%;
+  
+    border-radius: 15px;
+  }
+
+.box{
+  background-color: #ffff;
+  width:90%;
+  height: 100%;
+  border-radius: 15px;
+}
+footer{
+ justify-content: center;
+  font-weight: 300;
+  color: #fff;
+  background-color:#11193e ;
+  display: flex;
+  position: relative;
+  height: 80px;
+  padding: 5px 5px;
+  justify-content: space-around;
+}
+.ft{
+  /* display: inline-block; */
+  /* border: 3px solid #fff; */
+  /* padding: 20px 10px;
+  right:80px ;
+  float: left; */
+
+}
+.btn3{
+  background: linear-gradient(#c21d83, #f43795);
+  border-radius: 50px;
+  padding: 10px 8px;
+  color:#eee;
+  padding: 5px 5px;
+}
+
+.get{
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 25px 25px;
+  margin: 40px 30px;
+
+}
+
+.get1{
+    background: linear-gradient(#c21d83, #f43795);
+    color: #fff;
+     border-radius: 50px;
+     padding: 2px 2px;
+}
+.get a{
+  color: #fff;
+  list-style: none;
+}

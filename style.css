@@ -1,5 +1,7 @@
 import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,21 +14,22 @@ import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=sw
 body {
   background-image: radial-gradient( #e26d6b, #df76ab );
   background-color: #ffffff;
-  height: 100vh;
+  /* height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden; */
 }
 .img-side{
   background-image:linear-gradient(#fb5e8d, #a837f4);
   position: absolute;
   top: 120px;
-  right: 40px;
+  right: 25px;
   width: 255px;
   height: 145px;
   border-radius: 25px;
   z-index: -1;
   transform:matrix(1.5,-0.7,0,2,0,0);
 }
+
 .btn1 {
   background-color: #11193e;
   color: #fff;
@@ -53,11 +56,11 @@ body {
   align-items: center;
   margin-top: 30px;
 }
-.skill,
+/* .skill,
 h1 {
   font-weight: 600;
   margin-top: 80px;
-}
+} */
 .skill .btn {
   background: linear-gradient(#fb605e, #f43795);
   border-radius: 30px;
@@ -72,21 +75,30 @@ h1 {
   transform: scale(1.1);
   color: white;
 }
- .img {
+.img {
   position: relative;
   height: 400px;
   width: 255px;
-  margin-top: 50px;
-  left: 300px;
+  margin-top: 30px;
+  left: 165px;
+  /* display: flex; */
   margin-right: 200px;
   border-radius: 50% 48% 47% 51% / 30% 30% 35% 32%;
+  /* border: 8px solid #fff; */
+  /* float: right; */
+}
+.skill {
+  margin-left: 220px;
+  margin-top: 70px;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .skill  h1 {
   font-size: 30px;
   font-weight: bold;
   color: #11193e;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 .box h3{
   font-weight: bold;
@@ -94,32 +106,31 @@ h1 {
 .img-box1{
   position: absolute;
   bottom:40px;
-  left: 220px;
+  left: 125px;
   background-color: #fff;
   border-radius: 20px;
   z-index: 2;
   width: 20%;
   text-align: center;
-}
+ }
  .img-box1 h2{
    font-weight: bold;
- }
- .box-1 h2{
    color: #11193e;
  }
+
 .img-box2{
   position: absolute;
   top:130px;
-  right: 200px;
+  right: 90px;
   background-color: #fff;
   border-radius: 20px;
   z-index: 2;
   width: 15%;
 
 }
-.img-box2 h2{
+/* .img-box2 h2{
   font-weight: bold;
-}
+} */
 .para, h2{
   text-align: center;
   padding: 10px 10px;
@@ -162,8 +173,8 @@ h1 {
   "item1 item2 item3"
   "item4 item5 item6";
 align-items: center;
-   padding: 50px 100px ;
-  margin-left: 150px;
+   padding: 50px 50px ;
+  margin-left: 50px;
 }
 .card-text{
   padding: 2px 20px;
@@ -256,12 +267,128 @@ footer{
 .foot-btn:hover{
   transform: scale(1.1);
 }
+@media screen and (max-width:	1536px) {
+  section {
+    justify-content: center;
+  }
 
-@media screen and (max-width: 750px) {
- .grid-container {
- width: 360px;
- }
- body.grid-container{
-   width: 360px;
-    padding: 0 1.7rem;
- }
+  .grid-container{
+      grid-template-columns: auto auto;
+      grid-template-areas:
+          "item1 item2"
+          "item3 item4"
+          "item5 item6";
+      margin: 5px;
+  }
+img{
+  border-radius: 50%;
+  size: 100px;
+  
+
+}
+ 
+
+.img-side{
+  background-image:linear-gradient(#fb5e8d, #a837f4);
+  position: absolute;
+  top: 120px;
+  left: 300px;
+  width: 250px;
+  height: 145px;
+  border-radius: 20px;
+  z-index: -1;
+  transform:matrix(1.5,-0.7,0,2,0,0);
+}
+
+ 
+
+  .img-box1{
+    position: absolute;
+    top: 260px;
+    right:-100px;
+    width: 100px;
+    height: 150px;
+  }
+
+ .img-box2{
+      position: absolute;
+      top: 100px;
+      left:360px;
+      width: 100px;
+
+  }
+  
+}
+/* mobile view */
+@media screen and (max-width: 600px) {
+  section {
+    justify-content: center;
+    align-items: center;
+  }
+  .skill {
+    margin-left: 100px;
+    margin-top: 70px;
+    padding-top: 30px;
+    align-items: center;
+  
+    margin-top: 30px;
+  }
+  .container{
+   
+    margin-left: 100px;
+    margin-top: 70px;
+    align-items: center;
+    margin-top: 30px;
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-left: 70px;
+
+  }
+  .btn1{
+    margin-left: 60px;
+    font-size: 12px;
+  }
+  .img{
+  border-radius: 45%;
+  left: 80px;
+  border-radius: 50%;
+  size: 100px;
+  height: 350px;
+  width: 350px;
+  }
+  .img-box1{
+    position: absolute;
+    top: 250px;
+    left:100px;
+    width: 100px;
+    height: 130px;
+  }
+
+ .img-box2{
+      position: absolute;
+      top: 100px;
+    right:50px;
+      width: 100px;
+
+  }
+  .img-side {
+    display: none;
+}
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6";
+  }
+  .grid-container {
+  margin-left: 60px;
+  }
+}
